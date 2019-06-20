@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1551487764 source:e:\engennering\embedded systems\embeddedware course\material\3- data structure\study\algorithms\binarysearch\main.c
+	<stdio.h>
+	<stdlib.h>
+
