@@ -23,36 +23,42 @@ void SelectionSort(uint32* arr,uint32 size)
     /* flag is to indicate whether the array is already sorted or not to save some loops */
     uint8 alreadySortedFlag = FALSE; 
 
-   
-/* Applying the Algorithm */
-	do{
-/* set the maximum value to the first element */
-		maxValue = arr[0]; 
-		maxIndex = 0;
+	if(arr != NULL) /* Cheeck for NUll Pointer */ 
+	{
+	/* Applying the Algorithm */
+		do{
+	/* set the maximum value to the first element */
+			maxValue = arr[0]; 
+			maxIndex = 0;
 
-		alreadySortedFlag = TRUE;
+			alreadySortedFlag = TRUE;
 
-	/* loop through the elements to cheek if there was a bigger value than max */
-		for(itertiveIndexI = FALSE; itertiveIndexI <= itertiveIndexJ; itertiveIndexI++)
-		{ 
-			if(arr[itertiveIndexI] > maxValue)
-			{
-				maxValue = arr[itertiveIndexI]; // change the the max value to the new max
-				maxIndex = itertiveIndexI;      // change the the max index to the new max index
-				alreadySortedFlag = FALSE;
+		/* loop through the elements to cheek if there was a bigger value than max */
+			for(itertiveIndexI = FALSE; itertiveIndexI <= itertiveIndexJ; itertiveIndexI++)
+			{ 
+				if(arr[itertiveIndexI] > maxValue)
+				{
+					maxValue = arr[itertiveIndexI]; // change the the max value to the new max
+					maxIndex = itertiveIndexI;      // change the the max index to the new max index
+					alreadySortedFlag = FALSE;
+				}
+				else
+				{
+					/* Do Nothing */
+				}
 			}
-			else
-			{
-				/* Do Nothing */
-			}
-		}
 
-/* Swap the maximum element with the top element in this iteration */
-		tempVar = arr[maxIndex];
-		arr[maxIndex] = arr[itertiveIndexJ];
-		arr[itertiveIndexJ] = tempVar;
+	/* Swap the maximum element with the top element in this iteration */
+			tempVar = arr[maxIndex];
+			arr[maxIndex] = arr[itertiveIndexJ];
+			arr[itertiveIndexJ] = tempVar;
 
-		itertiveIndexJ--; // update the j
+			itertiveIndexJ--; // update the j
 
-	}while( (itertiveIndexJ > 0) && (alreadySortedFlag = FALSE) );
+		}while( (itertiveIndexJ > 0) && (alreadySortedFlag = FALSE) );
+	}
+	else
+	{
+		/* Do Nothing */
+	}
 } 
