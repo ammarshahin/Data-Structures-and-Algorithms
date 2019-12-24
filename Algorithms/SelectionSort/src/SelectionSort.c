@@ -9,8 +9,8 @@
 
 /******************* APIs Impelmention ************************/
 /*  
-     Selection Sort
-    Desc: This function is used for Impelemntation the Bubble Sort Algorithm
+     SelectionSort
+    Desc: This function is used for Impelemntation the Selection Sort Algorithm
     parm arr : pointer to the array to be sorted
     parm size : the size of the array to be sorted
     return void
