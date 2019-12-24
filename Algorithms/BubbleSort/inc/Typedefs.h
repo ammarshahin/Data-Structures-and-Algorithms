@@ -4,8 +4,6 @@
  * Created: 10/21/2019 3:33:11 PM
  *  Author: Ammar Shahin
  */ 
-
-
 #ifndef Typedefs_H_
 #define Typedefs_H_
 
@@ -24,9 +22,9 @@ typedef volatile uint8* const reg_type;
 
 typedef void(*v_PtrFunc_v_type)(void);
 /************************************************************************/
-/*				      defining the NULL Pointer                         */
+/*				      defining the NULL                                  */
 /************************************************************************/
-//#define NULL ((void *)0)
+#define NULL ((void *)0)
 /************************************************************************/
 /*				 		defining boolean values                         */
 /************************************************************************/

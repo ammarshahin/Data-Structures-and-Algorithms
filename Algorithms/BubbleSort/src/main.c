@@ -1,8 +1,7 @@
 /* main.c
    Created by : ammar shahin 
    Date :  20/7/2019*/
-
-
+   
 /***************************includes***************************/
 #include <stdio.h>
 #include "Typedefs.h"
@@ -16,7 +15,7 @@ uint8 main()  /* the program starts here */
 	uint8 itertiveIndexI;  
 
 /* declare variables used */
-	uint32 arr[SIZE]={ 2 ,2 ,8 ,154, 158, 478, 588 ,798 ,1641, 1654 ,10000 ,64654 ,466546};
+	uint32 arr[SIZE]={ 2, 10000, 8, 154, 1641, 158, 478, 588, 798, 2, 1654, 64654, 88};
 	
 /* Displaying the results before sorting */
 	printf("The array Before sorting: ");
